@@ -15,17 +15,7 @@ from forms import MonkeyForm, SelectOneMonkeyForm, SelectManyMonkeyForm
 
 current_monkey_id = None
 
-#heroku = Heroku(app)
-#HEROKU: uncomment following line AND comment the line three rows below 
-#app.config.from_object('configmodule.ProductionConfig')
-#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-#print os.environ['DATABASE_URL']
-#TESTING: uncomment the following line AND comment the line above
-
-
-#def index():
-#    """ main index, renders default layout which gives choices """
-#    return render_template('layout.html')
+heroku = Heroku(app)
 
 @app.route('/')
 @app.route('/list_monkeys', methods=['GET', 'POST'])
