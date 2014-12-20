@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form method="POST" action="/best_friend1">
+      <div>{{ form.example.label }} {{ form.example}}</div>
+      <button type="submit" class="btn">Submit</button>    
+    </form>
+  {% endif %}
+{% endblock %}
+

@@ -1,0 +1,26 @@
+<!--  -->
+{% extends "layout.html" %} 
+<!-- monkeypages is a Paginate object -->
+{% block body %}
+<table class="table table-striped">
+  <thead>
+    <th><a href="{{ url_for('list_monkeys', page=monkeypages.page, sort_by='name' ) }}"> Name </a></th>
+    <th><a href="{{ url_for('list_monkeys', page=monkeypages.page, sort_by='best_friend' ) }}"> Best Friend </a></th>
+    <th><a href="{{ url_for('list_monkeys', page=monkeypages.page, sort_by='number_of_friends' ) }}"> Number of Friends </a></th>
+  </thead>
+  <tbody>
+    {% for monkey in monkeypages.items %}
+      <tr>
+        <td> {{ monkey.name }} </td>
+	<td> {{ monkey.best_friend_name }} </td>
+	<td> {{ monkey.lenfriends }} </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% if monkeypages.has_prev %}<a href="{{ url_for('list_monkeys', page=monkeypages.prev_num ) }}"><< Up </a>{% else %}<< Up{% endif %} | 
+{% if monkeypages.has_next %}<a href="{{ url_for('list_monkeys', page=monkeypages.next_num, method='GET') }}">Down >></a>{% else %}Down >>{% endif %}
+{% endblock %}
+
+

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form method="POST" action="/view_profile">
+      <div>{{ form.example.label }} {{ form.example(multiple=False)}}</div>
+      <button type="submit" class="btn">Submit</button>    
+    </form>
+  {% endif %}
+{% endblock %}

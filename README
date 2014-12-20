@@ -1,0 +1,7 @@
+A demoversion of a database application by markus.kaukonen@iki.fi
+
+- To run tests: *python run_tests.py*
+- To initialize the database: *python run_init_app_db.py*
+- To run the actual server: *python run.py*
+
+
