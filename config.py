@@ -5,14 +5,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 USERNAME='admin'
 PASSWORD='default'
-DEBUG = True
-SECRET_KEY = 'development key'
+DEBUG = False
+SECRET_KEY = 'Laa12Kis3'
 
-SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(basedir, 'app.db') +
-                           '?check_same_thread=False')
+#SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(basedir, 'app.db') +
+#                           '?check_same_thread=False')
 
-#if os.environ.get('DATABASE_URL') is None:
-#    SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(basedir, 'app.db') +
-#                               '?check_same_thread=False')
-#else:
-#    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+SQLALCHEMY_DATABASE_URI = "HEROKU_POSTGRESQL_BRONZE_URL"
+
