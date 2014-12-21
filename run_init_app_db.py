@@ -9,6 +9,5 @@ from app import app
 from init_db import init_db
 
 # generating database with name 'app.db' 
-app.config['SQLALCHEMY_DATABASE_URI'] = \
-    'sqlite:///' + os.path.join(basedir, 'app.db')
+app.config.from_pyfile('../config.py')
 init_db(remove_file=os.path.join(basedir, 'app.db'))
