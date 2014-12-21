@@ -15,7 +15,7 @@ from forms import MonkeyForm, SelectOneMonkeyForm, SelectManyMonkeyForm
 
 current_monkey_id = None
 
-heroku = Heroku(app)
+
 
 @app.route('/')
 @app.route('/list_monkeys', methods=['GET', 'POST'])
