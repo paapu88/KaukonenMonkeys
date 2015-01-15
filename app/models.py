@@ -24,9 +24,10 @@ class Friend(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80))
     monkey_id = db.Column(db.Integer, db.ForeignKey('monkey.id'))
+    #monkey_name = db.Column(db.Integer, db.ForeignKey('monkey.name'))
 
     to_monkey = db.relationship('Monkey', foreign_keys='Friend.monkey_id')
-    #to_monkey_name = db.Column(db.String(80))
+    #to_monkey_name = db.relationship('Monkey', foreign_keys='Friend.monkey_id')
     def __repr__(self):
         return 'Friend: <Name %r>' % self.name
 
