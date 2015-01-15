@@ -1,10 +1,8 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if session.logged_in %}
-    <form method="POST" action="/best_friend2">
+     <form action="{{ url_for('best_friend2', current_monkey_id=current_monkey_id ) }}" method="POST">
       <div>{{ form.example.label }} {{ form.example}}</div>
       <button type="submit" class="btn">Submit</button>    
     </form>
-  {% endif %}
 {% endblock %}
 

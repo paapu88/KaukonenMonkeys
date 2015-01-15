@@ -1,6 +1,5 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if session.logged_in %}
     <form method="POST" action="/add">
         {{ form.hidden_tag() }}
         {{ form.name.label }} {{ form.name(size=50) }}
@@ -8,5 +7,4 @@
         {{ form.email.label }} {{ form.email(size=50) }}
         <input type="submit" value="Go">
     </form>
-  {% endif %}
 {% endblock %}

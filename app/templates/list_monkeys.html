@@ -11,9 +11,9 @@
   <tbody>
     {% for monkey in monkeypages.items %}
       <tr>
-        <td> {{ monkey.name }} </td>
-	<td> {{ monkey.best_friend_name }} </td>
-	<td> {{ monkey.lenfriends }} </td>
+        <td> <a href="{{ url_for('edit', current_monkey_id=monkey.id ) }}"> {{monkey.name}} </a> </td>
+        <td> <a href="{{ url_for('best_friend2', current_monkey_id=monkey.id ) }}"> {{monkey.best_friend_name}} </a> </td>
+        <td> <a href="{{ url_for('friend2', current_monkey_id=monkey.id ) }}"> {{monkey.lenfriends}} </a> </td>
       </tr>
     {% endfor %}
   </tbody>

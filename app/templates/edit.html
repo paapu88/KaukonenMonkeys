@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if session.logged_in %}
-    <form method="POST" action="/edit">
+    <form action="{{ url_for('edit', current_monkey_id=current_monkey_id ) }}" method="POST">
         {{ form.hidden_tag() }}
         {{ form.name.label }} {{ form.name }}
         {{ form.age.label }} {{ form.age }}
         {{ form.email.label }} {{ form.email }}
         <input type="submit" value="Save">
     </form>
-  {% endif %}
 {% endblock %}

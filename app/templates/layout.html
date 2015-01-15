@@ -13,20 +13,12 @@
 
 <div class="page-header">
   <h1>Monkeys</h1>
+Click a title to change ordering. Click a name or a number to change stuff related to it!
 </div>
   <ul class= "nav nav-pills" role="tablist">
-  {% if not session.logged_in %}
-    <li role="presentation" class="active"><a href="{{ url_for('login') }}">Log in</a></li>
-  {% else %}
     <li role="presentation" class="active"><a href="{{ url_for('add') }}">Add a Monkey</a></li>
-    <li role="presentation" class="active"><a href="{{ url_for('view_profile') }}">View a Monkey Profile</a></li>
-<li role="presentation" class="active"><a href="{{ url_for('select_one_from_list') }}">Edit a Monkey</a></li>
     <li role="presentation" class="active"><a href="{{ url_for('delete') }}">Remove a Monkey</a></li>
-    <li role="presentation" class="active"><a href="{{ url_for('friend1') }}">Friend Monkeys</a></li>
-    <li role="presentation" class="active"><a href="{{ url_for('best_friend1') }}">Set a Best Friend</a></li>
     <li role="presentation" class="active"><a href="{{ url_for('list_monkeys') }}">List Monkeys</a></li>
-    <li role="presentation" class="active"><a href="{{ url_for('logout') }}">log out</a></li>
-  {% endif %}
   </ul>
   {% for message in get_flashed_messages() %}
     <li role="presentation" class="active"><div class=flash>{{ message }}</div></li>
