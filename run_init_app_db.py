@@ -6,7 +6,7 @@
 import os.path
 from config import basedir
 from app import app
-from init_db import init_db
+from app.init_db import init_db
 
 # generating database with name 'app.db' 
 app.config.from_pyfile('../config.py')
