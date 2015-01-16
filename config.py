@@ -10,6 +10,6 @@ DEBUG = False
 SECRET_KEY = 'Laa12Kis3'
 
 # comment the following when using heroku, uncomment for local testing
-#SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(basedir, 'app.db') +
-#                           '?check_same_thread=False')
+SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(basedir, 'app.db') +
+                           '?check_same_thread=False')
 
