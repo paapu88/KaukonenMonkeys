@@ -28,7 +28,7 @@ Twisted-Core==13.2.0
 Twisted-Web==13.2.0
 UniConvertor==1.1.4
 WTForms==2.0.1
-Werkzeug==0.9.6
+Werkzeug==0.15.3
 adium-theme-ubuntu==0.3.4
 alembic==0.6.2
 apt-xapian-index==0.45
