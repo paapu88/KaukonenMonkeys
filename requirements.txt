@@ -2,7 +2,7 @@ Brlapi==0.6.1
 CouchDB==0.8
 Cython==0.20.1post0
 Django==1.7
-Flask==0.11-dev
+Flask==1.0
 Flask-Bootstrap==3.3.0.1
 Flask-Migrate==1.2.0
 Flask-SQLAlchemy==1.0
