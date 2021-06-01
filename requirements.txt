@@ -119,7 +119,7 @@ system-service==0.1.6
 tornado==3.2.1
 uTidylib==0.2
 unity-lens-photos==1.0
-urllib3==1.7.1
+urllib3==1.26.5
 vasputil==5.5
 virtkey==0.63.0
 virtualenv==1.11.6
