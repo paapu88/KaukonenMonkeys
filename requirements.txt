@@ -56,7 +56,7 @@ gdata==2.0.18
 gpaw==0.5.3667
 gunicorn==19.1.1
 gyp==0.1
-html5lib==0.999
+html5lib==0.999999999
 httplib2==0.8
 itsdangerous==0.22
 keyring==3.5
