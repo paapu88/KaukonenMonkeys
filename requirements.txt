@@ -66,7 +66,7 @@ lazr.uri==1.0.3
 lockfile==0.8
 logilab-common==0.61.0
 louis==2.5.3
-lxml==3.3.3
+lxml==4.9.1
 matplotlib==1.4.x
 mechanize==0.2.5
 mock==1.0.1
