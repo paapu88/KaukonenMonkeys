@@ -106,7 +106,7 @@ pyusb==0.4.3
 pyxdg==0.25
 rdflib==2.4.2
 reportlab==3.0
-requests==2.2.1
+requests==2.20.0
 roman==2.0.0
 scipy==0.15.0.dev-99aff1e
 sessioninstaller==0.0.0
